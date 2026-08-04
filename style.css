@@ -58,7 +58,32 @@ align-items:center;
 justify-content:center;
 text-align:center;
 }
+.hero-image img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 25px #38bdf8;
+    transition:0.4s;
+}
 
+.hero-image img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 40px #38bdf8;
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+}
 .hero h2{
 font-size:55px;
 color:#38bdf8;
